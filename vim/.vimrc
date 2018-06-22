@@ -281,6 +281,7 @@ nnoremap <C-m> :NERDTreeToggle<CR>
 nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 nnoremap <F9> :Ack
+nnoremap <silent> <leader>n :nohlsearch<CR>
 
 " jump with other window
 "nnoremap <C-J> <C-W><C-J>
