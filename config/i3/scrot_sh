@@ -1,0 +1,2 @@
+#!/bin/bash
+sleep 0.2;scrot -s 'scrot_%Y-%m-%d--%s_$wx$h.png' -e 'mv $f ~/Pictures/scrot_ss'
