@@ -1,0 +1,119 @@
+!- Font Render
+Xft.dpi:96
+Xft.antialiasing:true
+Xft.rgba:rgb
+Xft.hinting:true
+Xft.hintstyle: hintslight
+Xft.lcdfilter:lcddefault
+!URxvt_font : --dejavu sans mono-----------iso8859-
+!URxvt*font: xft:Inconsolata\ for\ Powerline:size=8
+*.cursorColor: #ebac54
+! Using XLFD (created via e.g. xfontsel)
+!URxvt*font:           -misc-fixed-medium-r-semicondensed-*-12-90-100-*-c-60-iso8859-1
+! Using Xft
+!URxvt*font: xft:Inconsolata:Nerd:size=15
+URxvt*font: xft:Inconsolata:size=10, xft:Pomodoro:size=6, xft:FontAwesome:size=6, xft:icomoon:size=6, xft:octicons:size=6, xft:Nerd:size=10, xft:Dejavu:size=10, xft:mono:size:1, xft:Terminess Powerline:size=12, xft:DejaVu Sans Mono for Powerline-10, xft:Symbol Neu Powerline:size=12, xft:Hack:size=12, xft:Source Code Pro for Powerline:size=12, xft:Go Mono for Powerline:size=12, xft:Space Mono for Powerline:size=12, xft:Tinos Powerline:size=12, xft:Ubuntu Mono derivative Powerline:size=12, xft:Ubuntu Mono derivative Powerline:size=12, xft:Roboto Mono for Powerline:size=12, xft:Noto Mono for Powerline:size=12, xft:Monofur for Powerline:size=12, xft:Meslo Slashed for Powerline:size=12, xft:Meslo Dotted for Powerline:size=12, xft:Meslo for Powerline:size=12, xft:Liberation Mono Powerline:size=12, xft:Input Mono:size=12, xft:Inconsolata-g for Powerline:size=12, xft:Inconsolata-dz for Powerline:size=12, xft:Inconsolata for Powerline:size=12, xft:Fura Mono Powerline:size=12, xft:Droid Sans Mono Slashed for Powerline:size=12, xft:Droid Sans Mono Dotted for Powerline:size=12, xft:Droid Sans Mono for Powerline:size=12, xft:DejaVu Sans Mono for Powerline:size=12, xft:Cousine Powerline:size=12, xft:Arimo Powerline:size=12, xft:Anonymice Powerline:size=12, xft:3270:size=12, xft:Droid Sans Mono:pixelsize=11:Regular
+
+URxvt256c-ml*font: xft:Inconsolata:size=10, xft:Pomodoro:size=6, xft:FontAwesome:size=6, xft:icomoon:size=6, xft:octicons:size=6, xft:Nerd:size=10, xft:Dejavu:size=10, xft:mono:size:1, xft:Terminess Powerline:size=12, xft:DejaVu Sans Mono for Powerline-10, xft:Symbol Neu Powerline:size=12, xft:Hack:size=12, xft:Source Code Pro for Powerline:size=12, xft:Go Mono for Powerline:size=12, xft:Space Mono for Powerline:size=12, xft:Tinos Powerline:size=12, xft:Ubuntu Mono derivative Powerline:size=12, xft:Ubuntu Mono derivative Powerline:size=12, xft:Roboto Mono for Powerline:size=12, xft:Noto Mono for Powerline:size=12, xft:Monofur for Powerline:size=12, xft:Meslo Slashed for Powerline:size=12, xft:Meslo Dotted for Powerline:size=12, xft:Meslo for Powerline:size=12, xft:Liberation Mono Powerline:size=12, xft:Input Mono:size=12, xft:Inconsolata-g for Powerline:size=12, xft:Inconsolata-dz for Powerline:size=12, xft:Inconsolata for Powerline:size=12, xft:Fura Mono Powerline:size=12, xft:Droid Sans Mono Slashed for Powerline:size=12, xft:Droid Sans Mono Dotted for Powerline:size=12, xft:Droid Sans Mono for Powerline:size=12, xft:DejaVu Sans Mono for Powerline:size=12, xft:Cousine Powerline:size=12, xft:Arimo Powerline:size=12, xft:Anonymice Powerline:size=12, xft:3270:size=12, xft:Source Code Pro Medium, xft:Source Code Pro Medium for Powerline, xft:Droid Sans Mono:pixelsize=11:Regular
+
+
+URxvt.foreground:           #DEDEDE
+URxvt.background:           #292828
+
+URxvt.borderColor:          #292828
+URxvt.borderless:          true
+
+URxvt.colorBD:              #ffffff
+URxvt.colorIT:              #a761c2
+URxvt.colorUL:              #6d9cbe
+URxvt.underlineColor:       #333333
+URxvt.highlightColor:       #ebac54
+URxvt.highlightTextColor:   #151515
+
+URxvt.scrollstyle:plain
+URxvt.scrollBar:false
+URxvt.scrollBar_right: true
+URxvt.scrollBar_floating: true
+URxvt.scrollTtyOutput:false
+URxvt.scrollWithBuffer:true
+URxvt.scrollTtyKeypress:true
+
+URxvt.cursorColor:          #EFFDFF
+URxvt.cursorColor2:         #ebac54
+URxvt.cursorBlink:          true
+URxvt.cursorUnderline:      false
+
+URxvt.perl-ext-common: default,tabbed,matcher,resize-font,-tabbed
+
+!- Copy/paste
+URxvt.iso14755: False
+URxvt.iso14755_52: false
+URxvt.keysym.Shift-Alt-C: perl:clipboard:copy
+URxvt.keysym.Shift-Alt-V: perl:clipboard:paste
+
+!- Scroll
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+
+!- Zoom in/out
+URxvt.keysym.C-Up: font-size:increase
+URxvt.keysym.C-Down: font-size:decrease
+
+!! Keycode fixes for Ctrl+direction in Vim
+!URxvt.keysym.C-Up:     \033[1;5A
+!URxvt.keysym.C-Down:   \033[1;5B
+!URxvt.keysym.C-Right:  \033[1;5C
+!URxvt.keysym.C-Left:   \033[1;5D
+!URxvt.keysym.C-Prior:  \033[5;5~
+!URxvt.keysym.C-Next:   \033[6;5~
+!URxvt.keysym.C-Home:   \033[7;5~
+!URxvt.keysym.C-End:    \033[8;5~
+
+URxvt.depth:                32
+URxvt.geometry:             80x20
+URxvt.transparent:          false
+URxvt.fading:               0
+! URxvt.urgentOnBell:         true
+! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            100000
+URxvt.internalBorder:       3
+URxvt.lineSpace: 0
+URxvt*letterSpace: 1
+!URxvt.underlineURLs:true
+!URxvt.transparent:false
+!URxvt.shading:30
+!URxvt.geometry:75x22
+
+!-Urgent Terminal for Notification
+URxvt*urgentOnBell: true
+URxvt*visualBell:   false
+
+!- Color Scheme
+*background: #0f0f0f
+*foreground: #c8c8c8
+
+!black
+*color0:  #251f1f
+*color8:  #5e5e5e
+!red
+*color1:  #eb4509
+*color9:  #eb4509
+!green
+*color2:  #94e76b
+*color10: #95e76b
+!yellow
+*color3:  #ffac18
+*color11: #ffac18
+!blue
+*color4:  #46aede
+*color12: #46aede
+!magenta
+*color5:  #e32c57
+*color13: #e32c57
+!cyan
+*color6:  #d6dbac
+*color14: #d6dbac
+!white
+*color7:  #efefef
+*color15: #efefef
