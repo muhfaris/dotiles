@@ -1,0 +1,59 @@
+[global_config]
+  borderless = True
+  enabled_plugins = ,
+  suppress_multiple_term_dialog = True
+  tab_position = hidden
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      profile = None
+      type = Window
+  [[starenka]]
+    [[[child0]]]
+      order = 0
+      parent = ""
+      position = 0:19
+      size = 1276, 777
+      type = Window
+    [[[child1]]]
+      labels = None, None
+      order = 0
+      parent = child0
+      type = Notebook
+    [[[terminal2]]]
+      command = startup
+      group = root
+      order = 0
+      parent = child1
+      profile = root
+      type = Terminal
+    [[[terminal3]]]
+      command = ""
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#070505"
+    background_darkness = 0.77
+    background_type = transparent
+    font = Monospace 8
+    foreground_color = "#e2e2e2"
+    scrollback_infinite = True
+    scrollback_lines = 1000
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[root]]
+    background_color = "#070505"
+    font = Monospace 5
+    foreground_color = "#cca938"
+    use_system_font = False
